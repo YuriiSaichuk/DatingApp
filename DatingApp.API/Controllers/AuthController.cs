@@ -34,6 +34,9 @@ namespace DatingApp.API.Controllers
             if (await _repo.UserExsist(userForRegisterDto.Username))
                 return BadRequest("Username already exsists");
 
+            if(userForRegisterDto.Password.Length <= 4)
+                return BadRequest("Userpassword should be contain at least 4 character");
+
             var userToCreate = new User
             {
                 Username = userForRegisterDto.Username
