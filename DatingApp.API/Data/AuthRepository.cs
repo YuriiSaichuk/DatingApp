@@ -35,7 +35,7 @@ namespace DatingApp.API.Data
                 {
                     if (computedHash[i] != passwordHash[i]) 
 
-                    return false;
+                        return false;
                 }
             }
 
@@ -71,7 +71,7 @@ namespace DatingApp.API.Data
             if (await _context.Users.AnyAsync(x => x.Username == username))
                 return true;
             else
-            return false;
+                return false;
         }
     }
 }

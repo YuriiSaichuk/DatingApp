@@ -10,7 +10,7 @@ namespace DatingApp.API.DTOs
         public string Username {get; set;}
         public string Gender { get; set; }
         public int Age { get; set; }
-        public int KnowAs { get; set; }
+        public string KnowAs { get; set; }
         public DateTime Created { get; set; }
         public DateTime LastAction { get; set; }
         public string Introduction { get; set; }

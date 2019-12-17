@@ -140,7 +140,7 @@
         "Country": "Angola",
         "Photos": [
         {
-            "url": "https://randomuser.me/api/portraits/men/60.jpg",
+            "url": "https://randomuser.me/api/portraits/men/56.jpg",
             "isMain": true,
             "description": "Ex velit ipsum irure excepteur."
         }
@@ -203,7 +203,7 @@
         "Country": "Belgium",
         "Photos": [
         {
-            "url": "https://randomuser.me/api/portraits/men/5.jpg",
+            "url": "https://randomuser.me/api/portraits/men/60.jpg",
             "isMain": true,
             "description": "Aliqua excepteur eu qui consectetur quis commodo."
         }
