@@ -20,8 +20,8 @@ export const appRoutes: Routes = [
         children: [
             { path: 'members', component: MemberListComponent, resolve: {users: MemberListResolver}},
             { path: 'members/:id', component: MemberDetailComponent, resolve: {user: MemberDetailResolver}},
-            // tslint:disable-next-line: max-line-length
-            { path: 'member/edit', component: MemberEditComponent, resolve: {user: MemberEditlResolver}, canDeactivate: [PreventUnsavedChanges]},
+            { path: 'member/edit', component: MemberEditComponent, resolve: {user: MemberEditlResolver},
+             canDeactivate: [PreventUnsavedChanges]},
             { path: 'messages', component: MessagesComponent },
             { path: 'lists', component: ListsComponent },
         ]
