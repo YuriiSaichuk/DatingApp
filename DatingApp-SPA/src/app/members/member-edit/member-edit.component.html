@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
-        <img class="card-img-top img-thumbnail" src="{{photoUrl}}" alt="{{user.username}}">
+        <img class="card-img-top img-thumbnail" src="{{photoUrl || '../../../../../assets/user.png'}}" alt="{{user.username}}">
         <div class="card-body">
           <strong>Location:</strong>
           <p>{{user.country}}, {{user.city}}</p>
@@ -27,7 +27,7 @@
         </div>
         <div class="card-body">
           <strong>Member since:</strong>
-          <p>{{user.created}}</p>
+          <p>{{user.created | date : 'dd.MM.yyyy hh:mm'}}</p>
         </div>
         <div class="card-footer">
             <button form="editForm" [disabled]="!editForm.dirty" class="btn btn-success btn-block">Save Changes</button>
