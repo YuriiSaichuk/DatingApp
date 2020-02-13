@@ -37,8 +37,8 @@ export class MemberListComponent implements OnInit {
   }
 
   loadUsers() {
-    // tslint:disable-next-line: max-line-length
-    this.userService.getUsers(this.pagination.currentPage, this.pagination.itemsPerPage, this.userParams).subscribe((result: PaginatedResult<User[]>) => {
+    this.userService.getUsers(this.pagination.currentPage, this.pagination.itemsPerPage, this.userParams)
+    .subscribe((result: PaginatedResult<User[]>) => {
       this.users = result.result;
       this.pagination = result.pagination;
     }, error => {
