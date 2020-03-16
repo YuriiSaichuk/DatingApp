@@ -71,7 +71,6 @@ namespace DatingApp.API.Controllers
                 return NoContent();
 
             throw new Exception($"Updating user {id} failed on save");
-            
         }
 
         [HttpPost("{id}/like/{recipientId}")]
@@ -100,7 +99,6 @@ namespace DatingApp.API.Controllers
                 return Ok();
 
             return BadRequest("Failed to like user");
-
         }
     }
 }
